@@ -22,7 +22,7 @@ img {
   width: auto;
   height: auto;
 }
-[class*="contenedor"], 
+[class*="container"], 
 main {
   width: min(95%, 120rem);
   margin: 3rem auto;
@@ -33,4 +33,7 @@ main {
   font-weight: 900;
   color: var(--primary);
   margin: 5rem 0;
+}
+a {
+  text-decoration: none;
 }

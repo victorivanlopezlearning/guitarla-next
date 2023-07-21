@@ -23,10 +23,6 @@
   font-size: 1.6rem;
 }
 /* SINGLE */
-.post.single {
-  max-width: 80rem;
-  margin: 0 auto;
-}
-.post__content-text {
+.text {
   white-space: pre-wrap;
 }

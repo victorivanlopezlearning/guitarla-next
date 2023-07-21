@@ -32,6 +32,10 @@ main {
   width: min(95%, 120rem);
   margin: 3rem auto;
 }
+.single {
+  max-width: 80rem;
+  margin: 0 auto;
+}
 
 [class*="heading"] {
   font-size: 4rem;

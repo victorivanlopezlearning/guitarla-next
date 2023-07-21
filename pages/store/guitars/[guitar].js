@@ -44,13 +44,13 @@ export default function Guitar({ guitar }) {
            title={`${name}: La guitarra definitiva del rock alternativo`}
            description={`Descubre ${name}, una guitarra única diseñada para capturar el espíritu y la energía del grunge y el rock alternativo. Con un estilo inconfundible y un sonido potente.`}
       >
-        <main className="container">
+        <main className="container single">
           <div className={`${styles.content} ${styles.single}`}>
             <Image className={styles.image} src={imageURL} alt={`Guitarra ${name}`} width={300} height={500} />
 
             <div>
               <h1>{name}</h1>
-              <p className={styles.singleDescription}>{description}</p>
+              <p className={styles.text}>{description}</p>
               <p className={styles.price}>${price} MXN</p>
             </div>
           </div>

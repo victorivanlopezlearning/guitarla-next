@@ -34,7 +34,7 @@ main {
 }
 .single {
   max-width: 80rem;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 [class*="heading"] {

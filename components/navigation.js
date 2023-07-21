@@ -32,6 +32,12 @@ export default function Navigation() {
       >
         Blog
       </Link>
+      <Link
+        className={`${styles.link}`}
+        href='/cart'
+      >
+        <img className={styles.icon} src='/img/shop-cart.png' alt="Icon cart" />
+      </Link>
     </nav>
   )
 }

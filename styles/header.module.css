@@ -2,7 +2,7 @@
   background-image: linear-gradient(to right, rgb(0 0 0 / .8), rgb(0 0 0 / .7)), url(/img/header.jpg);
   background-size: cover;
   background-position: center;
-  padding: 6rem 0;
+  padding: 4rem 0;
   position: relative;
 }
 .bar {
@@ -41,16 +41,26 @@
   font-size: 1.5rem;
   padding: .7rem;
 }
+.link:last-of-type {
+  display: none;
+}
+@media (min-width: 768px) {
+  .link:last-of-type {
+    display: block;
+  }
+}
 @media (hover: hover) {
   .link {
     transition: background-color .3s;
   }
 
-  .link:hover:not(.active) {
+  .link:hover:not(.active, .link:last-of-type) {
     background-color: var(--primary);
   }
 }
-
 .active {
   color: var(--primary);
+}
+.icon {
+  width: 2.5rem;
 }

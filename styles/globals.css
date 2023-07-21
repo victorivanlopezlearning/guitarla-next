@@ -101,6 +101,21 @@ a {
     width: 100%;
   }
 }
+/* ERRORS */
+.error-validation {
+  margin: 1rem 0 0 0;
+}
+.error-validation-text {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #c30d0d;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .error-validation-text {
+    text-align: start;
+  }
+}
 .error-404 {
   display: grid;
   place-items: center;

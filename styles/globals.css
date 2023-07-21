@@ -97,3 +97,14 @@ a {
     width: 100%;
   }
 }
+.error-404 {
+  display: grid;
+  place-items: center;
+}
+.error-404-description {
+  font-size: 4rem;
+}
+.btn-error-404 {
+  display: inline-block;
+  margin: 0;
+}

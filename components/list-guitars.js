@@ -1,7 +1,6 @@
 import Guitar from "./guitar";
 
 export default function ListGuitars({ guitars }) {
-  console.log(guitars)
   return (
     <>
       {guitars?.length && (

@@ -1,7 +1,9 @@
+import Link from "next/link";
 import Layout from "@/components/layout";
+import CartItem from "@/components/cart-item";
 import styles from '@/styles/cart.module.css';
 
-export default function Cart() {
+export default function Cart({ cart }) {
   return (
     <Layout
       title="Completa tu experiencia de compra de guitarras."
@@ -13,7 +15,19 @@ export default function Cart() {
         <div className={styles.content}>
           <div className={styles.items}>
             <h2>Artículos</h2>
+            {cart?.length === 0 ? (
+              <>
+                <p>Carrito vacío. <Link className={`${styles['empty-link']}`} href={'/store'}>Ver Tienda</Link></p>
+              </>
 
+            ) : (
+              cart?.map(item => (
+                <CartItem
+                  key={item.id}
+                  item={item}
+                />
+              ))
+            )}
           </div>
 
           <aside className={styles.resume}>

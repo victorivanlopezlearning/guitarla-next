@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import styles from '@/styles/header.module.css';
 
@@ -36,7 +37,7 @@ export default function Navigation() {
         className={`${styles.link}`}
         href='/cart'
       >
-        <img className={styles.icon} src='/img/shop-cart.png' alt="Icon cart" />
+        <Image src='/img/shop-cart.png' alt="Icon cart" width={25} height={20}/>
       </Link>
     </nav>
   )

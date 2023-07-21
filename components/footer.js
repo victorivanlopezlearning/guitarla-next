@@ -23,7 +23,7 @@ export default function Footer() {
             Nosotros
           </Link>
           <Link
-            className={`${styles.link} ${(router.pathname === '/store') ? styles.active : ''}`}
+            className={`${styles.link} ${(router.pathname === '/store' || router.pathname === '/store/guitars/[guitar]') ? styles.active : ''}`}
             href='/store'
           >
             Tienda

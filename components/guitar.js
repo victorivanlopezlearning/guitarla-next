@@ -17,7 +17,7 @@ export default function Guitar({ guitar }) {
 
         <Link
           className="btn-link"
-          href={`/guitars/${url}`}
+          href={`/store/guitars/${url}`}
         >
           Ver Producto
         </Link>

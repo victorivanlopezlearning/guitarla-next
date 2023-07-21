@@ -15,7 +15,7 @@ export async function getServerSideProps() {
   }
 }
 
-export default function Store({ guitars }) {
+export default function Index({ guitars }) {
 
   return (
     <>

@@ -1,0 +1,32 @@
+.image {
+  border-radius: 1rem;
+}
+.content {
+  padding: 2rem;
+}
+.title {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+  height: 7rem;
+}
+.meta {
+  font-size: 1.6rem;
+  color: var(--primary);
+}
+.extract {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  font-size: 1.6rem;
+}
+/* SINGLE */
+.post.single {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.post__content-text {
+  white-space: pre-wrap;
+}

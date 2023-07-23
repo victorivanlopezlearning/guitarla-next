@@ -3,7 +3,7 @@ import Layout from "@/components/layout";
 import CartItem from "@/components/cart-item";
 import styles from '@/styles/cart.module.css';
 
-export default function Cart({ cart }) {
+export default function Cart({ cart, updateQuantity }) {
   return (
     <Layout
       title="Completa tu experiencia de compra de guitarras."
@@ -25,6 +25,7 @@ export default function Cart({ cart }) {
                 <CartItem
                   key={item.id}
                   item={item}
+                  updateQuantity={updateQuantity}
                 />
               ))
             )}

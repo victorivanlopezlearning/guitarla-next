@@ -1,17 +1,19 @@
 import Image from 'next/image';
 import styles from '@/styles/cart-item.module.css';
 
-function CartItem({ item }) {
+function CartItem({ item, updateQuantity }) {
   const { imageURL, name, price, quantity, id } = item;
   return (
     <div className={styles.item}>
-      <Image className={styles.image} src={imageURL} alt={`Imagen ${name}`} width={100} height={230}/>
+      <Image className={styles.image} src={imageURL} alt={`Imagen ${name}`} width={100} height={230} />
 
       <div className={styles.content}>
         <p className={styles.name}>{name}</p>
         <p className="item__quantity">Cantidad:</p>
         <select
           className={`${styles['select-qty']}`}
+          onChange={(e) => updateQuantity({ id, quantity: Number(e.target.value) })}
+          value={quantity}
         >
           <option value="1">1</option>
           <option value="2">2</option>

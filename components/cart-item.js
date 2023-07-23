@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from '@/styles/cart-item.module.css';
 
-function CartItem({ item, updateQuantity }) {
+function CartItem({ item, updateQuantity, deleteItemToCart }) {
   const { imageURL, name, price, quantity, id } = item;
   return (
     <div className={styles.item}>
@@ -28,7 +28,10 @@ function CartItem({ item, updateQuantity }) {
       <button
         type="button"
         className={`${styles['btn-delete']}`}
-      >Eliminar</button>
+        onClick={() => deleteItemToCart(id)}
+      >
+        Eliminar
+      </button>
     </div>
   )
 }

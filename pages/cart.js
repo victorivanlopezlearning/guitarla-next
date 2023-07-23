@@ -4,7 +4,7 @@ import Layout from "@/components/layout";
 import CartItem from "@/components/cart-item";
 import styles from '@/styles/cart.module.css';
 
-export default function Cart({ cart, updateQuantity }) {
+export default function Cart({ cart, updateQuantity, deleteItemToCart }) {
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
@@ -34,6 +34,7 @@ export default function Cart({ cart, updateQuantity }) {
                   key={item.id}
                   item={item}
                   updateQuantity={updateQuantity}
+                  deleteItemToCart={deleteItemToCart}
                 />
               ))
             )}

@@ -62,7 +62,7 @@
 .btn-delete {
   cursor: pointer;
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   left: 1rem;
   color: #c30d0d;
   background-color: var(--white);

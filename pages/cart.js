@@ -1,9 +1,17 @@
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Layout from "@/components/layout";
 import CartItem from "@/components/cart-item";
 import styles from '@/styles/cart.module.css';
 
 export default function Cart({ cart, updateQuantity }) {
+  const [total, setTotal] = useState(0);
+
+  useEffect(() => {
+    const sumTotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+    setTotal(sumTotal);
+  }, [cart])
+
   return (
     <Layout
       title="Completa tu experiencia de compra de guitarras."
@@ -33,6 +41,7 @@ export default function Cart({ cart, updateQuantity }) {
 
           <aside className={styles.resume}>
             <h2>Total del carrito</h2>
+            <p>Total: ${total} MXN</p>
           </aside>
         </div>
       </main>
